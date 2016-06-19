@@ -1,0 +1,132 @@
+div {
+	display: block;
+	}
+
+body {
+	display: block; 
+	margin: 10px;
+    border-style: 
+    border-width: 100% ;
+    border-color: blue;
+	background-color: #6C9EC9;
+	color: #1C2F7F;
+	font-family: sans-serif;
+}
+
+#container {
+	padding: 100px;
+    padding-top: 100px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    margin: 100px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 100px;
+    margin-left: 10px;
+    width: 60%;
+    height: 100%;
+    background-color: #6C9EC9;
+    font-family: sans-serif;
+}
+
+#gameboard {
+    float: left;
+	position: center;
+	top: 50%;
+	left: 50%;
+	width: 400px;
+	margin: 0px auto;
+    background-color: transparent;
+    opacity: 0.6;
+
+	}
+
+    table {
+        margin: auto;
+    }
+
+
+td:hover {background-color: #4E7FA7;}
+
+table tr td {
+  height: 50px;
+  width: 50px;
+  padding: 20px;
+  border: 2px solid #1C2F7F;
+}
+
+.MarkerX {
+height: 30px;
+  width: 30px;
+  border-radius: 15px;
+}
+
+.MarkerO {
+height: 30px;
+  width: 30px;
+  border-radius: 15px;
+}
+
+.square {
+background-color: black;
+width: 33.33%;
+height: 33.33%;
+float: left;
+position: relative;
+}
+
+
+#topLeft {
+height: 0%;
+}
+
+#top_Center {
+height: 0%;
+}
+
+#Top_Right {
+height: 0%;}
+
+
+#midLeft {
+    height: 0%;
+}
+
+#midCenter {
+height: 0%;
+}
+
+#midRight {
+height: 0%;
+}
+#bottomLeft {
+	height: 0%;
+}
+
+#bottomCenter {
+height: 0%;
+}
+]
+#Right {
+height: 0%;
+}
+
+.reset {
+     position: relative;
+    bottom: 5px;
+    width: 12%;
+    height: 8%;
+    text-align: center;
+    cursor: pointer;
+    font-size: 25px;
+    font-family: arial;
+    background-color: transparent;
+}
+
+.score {
+    float:right;
+    font-size:2rem;
+    padding-bottom:30px;
+    font-weight:bold;
+}

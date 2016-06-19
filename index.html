@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tic Tac Toe</title>
+<link rel="stylesheet" type="text/css" href="main.css">
+<script type="text/javascript" src ="app.js"></script>
+</head>
+<body onload="fnLoad()">
+
+<div class="score">
+  Player:
+  <span class="playerScore">0</span> Computer:<span class="computerScore">0</span></div>
+
+<div id="container">
+
+	<div id= "gameboard">	
+		<table>
+		<tr>
+			<td onclick ="this.style.backgroundColor = 'blue';"><div class ="square" id ="topLeft"></div> </td>
+			<td onclick="this.style.backgroundColor = 'purple';"> <div class ="square" id ="topCenter"></div> </td>
+			<td onclick="this.style.backgroundColor = 'pink';">  <div class ="square" id ="topRight"></div> </td>
+		</tr>
+
+		<tr> 
+			<td onclick="this.style.backgroundColor = 'red';">  <div class ="square" id ="midLeft" style="background-color: black;"></div> </td>
+			<td onclick="this.style.backgroundColor = 'orange';">  <div class ="square" id ="midCenter" style="background-color: black;"></div> </td>
+			<td onclick="this.style.backgroundColor = 'yellow';">  <div class ="square" id ="midRight" style="background-color: black;"></div> </td>
+			</tr>
+
+		<tr>
+			<td onclick="this.style.backgroundColor = 'green';"> 
+				<div class ="square" id ="bottomLeft" style="background-color: white;"></div> 
+				</td>
+			<td onclick="this.style.backgroundColor = 'aqua';"> 
+				<div class ="square" id ="bottomCenter" style="background-color: black;"></div> 
+				</td>
+			<td onclick="this.style.backgroundColor = 'magenta';"> 
+				<div class ="square" id ="bottomRight" style="background-color: black;"></div>
+				</td>
+		</tr>
+		</table>
+	</div>
+	</div>
+<div id="selectMarker" style="display: block;">
+<div id="ask">
+<div id="markerX"></div>
+<div id="markerO"></div>
+</div>
+</div>
+
+<button class="reset">Reset</button>
+</div>
+
+</body>
+</html>
