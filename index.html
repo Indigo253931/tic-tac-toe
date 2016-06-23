@@ -2,13 +2,12 @@
 <html>
 <head>
   <title>Tic Tac Toe</title>
- 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
- <div class="boxes">
+ <div class="gameboard">
   <div class="box" onclick="this.style.backgroundColor = 'red';">
     <span class="x">X</span>
     <span class="o">O</span>
@@ -45,14 +44,6 @@
     <span class="x">X</span>
     <span class="o">O</span>
   </div>
-  <div class="red-line top-hor"></div>
-  <div class="red-line mid-hor"></div>
-  <div class="red-line bottom-hor"></div>
-  <div class="red-line left-vert"></div>
-  <div class="red-line mid-vert"></div>
-  <div class="red-line right-vert"></div>
-  <div class="red-line ltr-diag"></div>
-  <div class="red-line rtl-diag"></div>
   
   <div class="x-wins js-wins">X Wins!<span>Play Again?</span></div>
   <div class="o-wins js-wins">O Wins!<span>Play Again?</span></div>
