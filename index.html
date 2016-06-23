@@ -1,55 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Tic Tac Toe</title>
-<link rel="stylesheet" type="text/css" href="main.css">
-<script type="text/javascript" src ="app.js"></script>
+  <title>Tic Tac Toe</title>
+ 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="main.css">
 </head>
-<body onload="fnLoad()">
-
-<div class="score">
-  Player:
-  <span class="playerScore">0</span> Computer:<span class="computerScore">0</span></div>
-
-<div id="container">
-
-	<div id= "gameboard">	
-		<table>
-		<tr>
-			<td onclick ="this.style.backgroundColor = 'blue';"><div class ="square" id ="topLeft"></div> </td>
-			<td onclick="this.style.backgroundColor = 'purple';"> <div class ="square" id ="topCenter"></div> </td>
-			<td onclick="this.style.backgroundColor = 'pink';">  <div class ="square" id ="topRight"></div> </td>
-		</tr>
-
-		<tr> 
-			<td onclick="this.style.backgroundColor = 'red';">  <div class ="square" id ="midLeft" style="background-color: black;"></div> </td>
-			<td onclick="this.style.backgroundColor = 'orange';">  <div class ="square" id ="midCenter" style="background-color: black;"></div> </td>
-			<td onclick="this.style.backgroundColor = 'yellow';">  <div class ="square" id ="midRight" style="background-color: black;"></div> </td>
-			</tr>
-
-		<tr>
-			<td onclick="this.style.backgroundColor = 'green';"> 
-				<div class ="square" id ="bottomLeft" style="background-color: white;"></div> 
-				</td>
-			<td onclick="this.style.backgroundColor = 'aqua';"> 
-				<div class ="square" id ="bottomCenter" style="background-color: black;"></div> 
-				</td>
-			<td onclick="this.style.backgroundColor = 'magenta';"> 
-				<div class ="square" id ="bottomRight" style="background-color: black;"></div>
-				</td>
-		</tr>
-		</table>
-	</div>
-	</div>
-<div id="selectMarker" style="display: block;">
-<div id="ask">
-<div id="markerX"></div>
-<div id="markerO"></div>
+<body>
+ <div class="boxes">
+  <div class="box" onclick="this.style.backgroundColor = 'red';">
+    <span class="x">X</span>
+    <span class="o">O</span>
+  </div>
+  <div class="box" onclick="this.style.backgroundColor = 'orange';">
+    <span class="x">X</span>
+    <span class="o">O</span>
+  </div>
+  <div class="box" onclick="this.style.backgroundColor = 'yellow';">
+    <span class="x">X</span>
+    <span class="o">O</span>
+  </div>
+  <div class="box" onclick="this.style.backgroundColor = 'green';">
+    <span class="x">X</span>
+    <span class="o">O</span>
+  </div>
+  <div class="box" onclick="this.style.backgroundColor = 'blue';">
+    <span class="x">X</span>
+    <span class="o">O</span>
+  </div>
+  <div class="box" onclick="this.style.backgroundColor = 'purple';">
+    <span class="x">X</span>
+    <span class="o">O</span>
+  </div>
+  <div class="box" onclick="this.style.backgroundColor = 'aqua';">
+    <span class="x">X</span>
+    <span class="o">O</span>
+  </div>
+  <div class="box" onclick="this.style.backgroundColor = 'magenta';">
+    <span class="x">X</span>
+    <span class="o">O</span>
+  </div>
+  <div class="box" onclick="this.style.backgroundColor = 'pink';">
+    <span class="x">X</span>
+    <span class="o">O</span>
+  </div>
+  <div class="red-line top-hor"></div>
+  <div class="red-line mid-hor"></div>
+  <div class="red-line bottom-hor"></div>
+  <div class="red-line left-vert"></div>
+  <div class="red-line mid-vert"></div>
+  <div class="red-line right-vert"></div>
+  <div class="red-line ltr-diag"></div>
+  <div class="red-line rtl-diag"></div>
+  
+  <div class="x-wins js-wins">X Wins!<span>Play Again?</span></div>
+  <div class="o-wins js-wins">O Wins!<span>Play Again?</span></div>
 </div>
-</div>
-
 <button class="reset">Reset</button>
-</div>
 
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
 </body>
 </html>
