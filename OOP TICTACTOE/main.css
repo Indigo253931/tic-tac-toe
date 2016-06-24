@@ -111,7 +111,7 @@ body {
 .x-wins, .o-wins{
   position: absolute;
   color: white;
-  font-family: futura, sans-serif;
+  font-family: sans-serif;
   font-weight: 100;
   width: 200px;
   text-align: center;
